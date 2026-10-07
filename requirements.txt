@@ -1,0 +1,4 @@
+pyTelegramBotAPI
+yt-dlp
+python-dotenv
+imageio-ffmpeg
