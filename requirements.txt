@@ -1,4 +1,4 @@
 pyTelegramBotAPI
-yt-dlp
+yt-dlp[default]
 python-dotenv
 imageio-ffmpeg
