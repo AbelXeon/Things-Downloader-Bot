@@ -30,9 +30,9 @@ URL_RE = re.compile(r"https?://\S+")
 # Prefer single-file mp4 (no merge = fastest). Every step skips files known to be >50MB.
 # "?" means: also accept if the size is unknown.
 FORMAT = (
-    "best[height<=720][ext=mp4][filesize<50M?][filesize_approx<50M?]/"
-    "bv*[height<=720][ext=mp4][filesize<50M?]+ba[ext=m4a]/"
-    "best[height<=480][filesize<50M?][filesize_approx<50M?]/"
+    "best[height<=720][ext=mp4][filesize<?50M][filesize_approx<?50M]/"
+    "bv*[height<=720][ext=mp4][filesize<?50M]+ba[ext=m4a]/"
+    "best[height<=480][filesize<?50M][filesize_approx<?50M]/"
     "best[height<=360]/"
     "best"
 )
